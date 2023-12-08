@@ -26,7 +26,7 @@ var (
 	monzoAccessTokens = kingpin.Flag("monzo-access-tokens", "Monzo access tokens comma separated").Default("").OverrideDefaultFromEnvar("MONZO_ACCESS_TOKENS").String()
 
 	metricsScrapeInterval = kingpin.Flag("scrape-interval", "Time in seconds between scrapes").Default("30").OverrideDefaultFromEnvar("METRICS_SCRAPE_INTERVAL").Int64()
-	metricsPort           = kingpin.Flag("metrics-port", "The port to bind to for serving metrics").Default("9036").OverrideDefaultFromEnvar("METRICS_PORT").Int()
+	metricsPort           = kingpin.Flag("metrics-port", "The port to bind to for serving metrics").Default("8080").OverrideDefaultFromEnvar("METRICS_PORT").Int()
 )
 
 func main() {

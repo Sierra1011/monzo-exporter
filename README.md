@@ -27,7 +27,7 @@ Flags:
   --monzo-oauth-external-url=""  The URL on which the exporter will be reachable
   --monzo-access-tokens=""       Monzo access tokens comma separated
   --scrape-interval=30           Time in seconds between scrapes
-  --metrics-port=9036            The port to bind to for serving metrics
+  --metrics-port=8080            The port to bind to for serving metrics
 ```
 
 ### Access tokens from Monzo playground
