@@ -16,7 +16,9 @@ COPY $PWD/*.go ./
 
 RUN go build -o /bin/monzo-exporter
 
-FROM golang:$golang_version AS run
+FROM alpine AS run
+
+RUN apk update && apk upgrade
 
 COPY --from=build /bin/monzo-exporter /bin/monzo-exporter
 
